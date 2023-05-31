@@ -43,18 +43,47 @@ body {
     opacity: 0.5;
 }
 
+/* .line {
+  border: none;
+  border-top: 1px solid white;
+  margin-top: 0.5em;
+} */
+
+/* .category::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: white;
+} */
+
 /* about me */
 #aboutme-container {
-    outline: solid white;
+    /* outline: solid white; */
     flex-wrap: wrap;
     height: 60vh;
     padding: 5%;
     padding-left: 15%;
+    /* margin-right: 30%; */
 } .category {
     color: white;
     font-size: 30px;
     font-weight: 800;
-} #aboutme {
+    /* position: relative; */
+}
+/* } .category::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 61vw;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: white; }*/
+ #aboutme {
     /* outline: solid white; */
     width: 50%;
     text-align: justify;
@@ -64,6 +93,10 @@ body {
     color: cyan;
 } #tech {
     opacity: 0.5;
+} .line {
+  width: 50%;
+  margin: 0;
+  margin-top: 1%;
 }
 
 /* cube */
@@ -164,4 +197,165 @@ body {
     text-decoration: none;
 } #say-hi:hover {
     color: rgb(250, 178, 23);
+} .mypic {
+  
+  border-radius: 50%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+} .mypic-container {
+  float: right;
+  margin-top: -25%;
+  position: absolute;
+  /* outline: solid white; */
+  margin-left: 60%;
+  margin-right: 20%;
+  height: 30%;
+  padding: 50px;
+  border-radius: 10%;
+
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  transition: transform 0.3s ease;
+} .mypic-container:hover {
+  transform: scale(1.05);
+} .fullname {
+  margin-top: 16px;
+  font-size: 18px; 
+  text-align: center;
+  color: white;
+}
+
+
+/* awards and experiences */
+#exp-container {
+    /* outline: solid white; */
+    flex-wrap: wrap;
+    height: 60vh;
+    padding: 5%;
+    padding-left: 15%;
+} #exp-list {
+    color: cyan;
+    /* outline: solid white; */
+    width: 50%;
+} .list-details {
+    color: white;
+    text-align: justify;
+    opacity: 0.5;
+    font-size: medium;
+} 
+
+/* projects */
+#projects-container {
+    /* outline: solid white; */
+    flex-wrap: wrap;
+    height: 180vh;
+    padding: 5%;
+    padding-left: 15%;
+} .grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: space-between;
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin-right: 0%;
+} .projects-card {
+  /* outline: solid white; */
+  padding: 2rem 1.75rem;
+  /* background-color: rgb(50, 29, 109); */
+  border-radius: 16px;
+  height: 200px;
+  width: 200px;
+  padding-bottom: 1%;
+  transition: transform 0.3s ease;
+
+  /* position: relative; */
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+} .projects-card:hover {
+  transform: scale(1.05);
+} tr {
+  margin-bottom: 20px;
+} td {
+  width: 50%; 
+} .projects-title {
+  /* display: flex;
+  justify-content: flex-start; */
+  align-self: flex-start;
+  font-size: small;
+} .proj-desc {
+  opacity: 0.5;
+  font-size: medium;
+  padding-top: 30%;
+} 
+
+/* card images */
+#chatbot-card:hover {
+  background-image: url('chatbot.png');
+} #mazebot-card:hover {
+  background-image: url('maze.png');
+} #ml-card:hover {
+  background-image: url('ml.png');
+} #farm-card:hover {
+  background-image: url('farm.png');
+} #pokedex-card:hover {
+  background-image: url('pikachu.png');
+} #calcu-card:hover {
+  background-image: url('calcu.png');
+} #chutes-card:hover {
+  background-image: url('chutes.png');
+} #checkers-card:hover {
+  background-image: url('checkers.png');
+} 
+
+#chatbot-card:hover p[class^="proj"], #chatbot-card:hover div[class="proj-title"] {
+  display: none;
+} #mazebot-card:hover p[class^="proj"], #mazebot-card:hover div[class="proj-title"] {
+  display: none;
+} #ml-card:hover p[class^="proj"], #ml-card:hover div[class="proj-title"] {
+  display: none;
+} #farm-card:hover p[class^="proj"], #farm-card:hover div[class="proj-title"] {
+  display: none;
+} #pokedex-card:hover p[class^="proj"], #pokedex-card:hover div[class="proj-title"] {
+  display: none;
+} #calcu-card:hover p[class^="proj"], #calcu-card:hover div[class="proj-title"] {
+  display: none;
+} #chutes-card:hover p[class^="proj"], #chutes-card:hover div[class="proj-title"] {
+  display: none;
+} #checkers-card:hover p[class^="proj"], #checkers-card:hover div[class="proj-title"] {
+  display: none;
+}
+
+
+
+/* navigation bar */
+#nav-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  line-height: 1.8;
+  height: 25vh;
+} .links {
+  color: cyan;
+  text-decoration: none;
+  font-weight: bolder;
+} .links:hover {
+  color: rgb(250, 178, 23);
+} .logos {
+  color: cyan;
+  padding-top: 60%;
 }
