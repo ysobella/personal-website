@@ -3,6 +3,9 @@
 body {
     background-color: rgb(36, 21, 78);
     font-family: 'Comfortaa', cursive;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* intro */
@@ -300,20 +303,28 @@ body {
 /* card images */
 #chatbot-card:hover {
   background-image: url('chatbot.png');
+  background-size: contain;
 } #mazebot-card:hover {
   background-image: url('maze.png');
+  background-size: contain;
 } #ml-card:hover {
   background-image: url('ml.png');
+  background-size: contain;
 } #farm-card:hover {
   background-image: url('farm.png');
+  background-size: contain;
 } #pokedex-card:hover {
   background-image: url('pikachu.png');
+  background-size: contain;
 } #calcu-card:hover {
   background-image: url('calcu.png');
+  background-size: contain;
 } #chutes-card:hover {
   background-image: url('chutes.png');
+  background-size: contain;
 } #checkers-card:hover {
   background-image: url('checkers.png');
+  background-size: contain;
 } 
 
 #chatbot-card:hover p[class^="proj"], #chatbot-card:hover div[class="proj-title"] {
@@ -358,4 +369,45 @@ body {
 } .logos {
   color: cyan;
   padding-top: 60%;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 50px; */
+  margin-bottom: 50px;
+} .credits {
+  margin: auto;
+  color: white;
+  opacity: 0.5;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(36, 21, 78);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
